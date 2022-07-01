@@ -4,6 +4,10 @@
 javascript Levelup
 
 
+### 0701 package.json 추가
+
+ "type": "module"  필수
+
 
 
 
