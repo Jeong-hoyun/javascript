@@ -9,5 +9,23 @@ javascript Levelup
  "type": "module"  필수
 
 
+### 정규표현식 패턴 0705
 
+## 역할
 
+- 문자 검색
+- 문자 대체
+- 문자 추출
+
+## 테스트 사이트
+
+https://reqexr.com
+
+## 패턴 
+
+^ab 줄 시작에 있는 ab와 일치
+ab$ 줄 끝에 있는 ab와 일치
+a|b | a 또는 b와 일치
+
+> 버티컬 바 ㅣ 를 사용하는 방법 &verbar;
+ 

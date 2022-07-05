@@ -22,5 +22,3 @@ user.age=22
 console.log('user',user)
 console.log('copyuser',copyUser)
 
-
-
