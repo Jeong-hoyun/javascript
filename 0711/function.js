@@ -19,3 +19,4 @@ const onClick2=()=>()=>{
     console.log('hello');
 }
 // 함수 선언이 두개이상일때는 
+

@@ -58,5 +58,23 @@ const header={
     }
 }
 
-const header2=document.querySelector('.titlearea2')
-header2.addEventListener('click',()=>{ console.log(this)})
+const person ={
+    name:'손흥민',
+    sayHi(){
+        console.log(this.name);
+    }
+ }
+
+
+ const data={
+    datas:[1,2,3,4,5],
+    all(){
+    olldata: console.log(this.datas.map(e=>e+=e)) 
+    },
+    
+
+}
+
+
+console.log(data.all())
+
