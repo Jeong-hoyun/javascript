@@ -28,4 +28,10 @@ ab$ 줄 끝에 있는 ab와 일치
 a|b | a 또는 b와 일치
 
 > 버티컬 바 ㅣ 를 사용하는 방법 &verbar;
+
+### callback,class,scope(범위)  0711
+
+### promise  0712
+
+### promise callback  복습 0713
  
