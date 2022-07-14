@@ -3,8 +3,7 @@ let p = new Promise(function() {
     axios.get('https://www.omdbapi.com/?apikey=7035c60c&s=bet').then( res=> { 
         console.log(res.data.Search.map(( e,index )=> 
         {if(index===1)   { return  e        }else{  }}
-            
-            
+           
             )) })  
   });
 
@@ -41,3 +40,16 @@ setTime.then((result)=>{
 
 
 
+const promise1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('foo');
+    }, 300);
+  });
+  
+  promise1.then((value) => {
+    console.log(value);
+    // expected output: "foo"
+  });
+  
+  console.log(promise1);
+  // output: [object Promise]
