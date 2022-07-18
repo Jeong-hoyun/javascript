@@ -1,0 +1,25 @@
+
+<html>
+  <head>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+      } 
+    </style>
+  </head>
+  <body>
+  </body>
+  <script>
+    for (let index = 0; index <5 ;index++) {
+        const divs=document.createElement('div');        
+        if(index%2===0){
+            document.body.appendChild(divs).style.background='red'
+        }else{
+            document.body.appendChild(divs).style.background='blue'
+        }     
+        
+    }
+  </script>
+</html>
