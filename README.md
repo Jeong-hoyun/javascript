@@ -34,4 +34,6 @@ a|b | a 또는 b와 일치
 ### promise  0712
 
 ### promise callback  복습 0713
- 
+
+### callback  연습문제  0718
+  find 사용법
