@@ -12,12 +12,13 @@
   <body>
   </body>
   <script>
+       const { appendChild, createElement } = document;
     for (let index = 0; index <5 ;index++) {
-        const divs=document.createElement('div');        
+        const divs=createElement('div');        
         if(index%2===0){
-            document.body.appendChild(divs).style.background='red'
+            appendChild(divs).style.background='red'
         }else{
-            document.body.appendChild(divs).style.background='blue'
+            appendChild(divs).style.background='blue'
         }     
         
     }

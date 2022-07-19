@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <title></title></head>
+<body>
+    <input type="number" id='plus'/>+
+    <input type="number" id='plus2' />=
+    <input type="number" id='result' readonly />
+    <button id="button" >더하기</button>
+</body>
+<script>
+ const plus=document.querySelector('#plus')
+ const plus2=document.querySelector('#plus2') 
+ const result=document.querySelector('#result')  
+ const btn=document.querySelector('#button')
+
+ btn.addEventListener('click',()=>
+  result.value=Number(plus.value)+Number(plus2.value))  
+
+</script>
+</html>

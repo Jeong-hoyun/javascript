@@ -1,0 +1,26 @@
+
+<html>
+    <head> 
+    </head>
+    <body>
+    </body>
+    <script>
+        const a=['change','keyup','keydown','keypress']
+
+        for (let index = 0; index <a.length; index++) {
+            const myinput=document.createElement('input');
+            myinput.addEventListener(a[index],(e)=>console.log(e.target.value))
+            myinput.style.margin='10px 200px'
+            document.body.appendChild(myinput)            
+        }
+        const myinputs=document.createElement('input');
+        for (let i = 0; i < a.length; i++) {
+         myinputs.addEventListener(a[i],(e)=>console.log(a[i]+e.target.value))
+                 
+        } 
+        myinputs.style.margin='0 500px'    
+         document.body.appendChild(myinputs)
+   
+
+    </script>
+  </html>
