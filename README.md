@@ -37,3 +37,10 @@ a|b | a 또는 b와 일치
 
 ### callback  연습문제  0718
   find 사용법
+  
+###  강의관련 연습문제  0719
+addEventListener,target,currenttarget() 
+###  강의관련 연습문제  0721
+event, input, e.preventDefault();
+###  강의관련 연습문제  0722
+set ,find 복습 map
