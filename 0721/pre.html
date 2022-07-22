@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event preventDefault!</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <a href="https://www.naver.com/">naver</a>
+</body>
+<script>
+const input=document.querySelector('#input')
+input.addEventListener('keypress',(e)=>{
+    if (e.key === 'enter') {    
+     console.log(e.target.value)
+     e.preventDefault();
+  }
+})
+//const a=document.querySelector('a');
+//a.addEventListener('click',(e)=>
+//{
+//    console.log('click event!')
+ //   e.preventDefault();
+//})
+
+</script>
+</html>

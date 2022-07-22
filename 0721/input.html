@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+  
+     <input type="text" id="main" placeholder="값을 입력!"/>
+    <div id="main-container"> </div>
+
+    
+</body>
+<script>
+
+
+ const input=document.querySelector('#main')
+ input.addEventListener('keydown',(e)=>{ 
+  const mydiv=document.querySelector('#main-container')
+  const minidiv=document.createElement('div') 
+   if (e.key === 'Enter') {  
+    minidiv.className='divs'   
+    minidiv.innerText=e.target.value 
+    minidiv.style.backgroundColor=e.target.value 
+    mydiv.appendChild(minidiv)
+    e.target.value=''    
+    }    
+ })
+
+ const mydiv=document.querySelector('#main-container')
+ mydiv.addEventListener('click',function(e){
+     mydiv.remove(e.currentTarget);
+        
+        })
+
+
+
+// innerHtml은 되도록 쓰지 않기 성능차이 있음
+</script>
+</html>

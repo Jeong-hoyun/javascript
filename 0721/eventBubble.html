@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event and </title>
+</head>
+<body>    
+    <h1>hello</h1>
+   
+    <form id='div1' >
+    <input  id='div2'>  </input>
+    </form>
+
+<script>
+const Listener=(e)=>{
+    console.log(`${e.currentTarget.id}`)
+    const currentTarget=e.currentTarget.id||e.currentTarget.toString();
+    const target =e.target.id||e.target.toString();
+    if(e.currentTarget.id==='div2'){
+       if (e.key==='enter'){
+        e.stopPropagation();
+        console.log('stop!')
+       }
+    }
+    console.log(`${currentTarget}의 event.=> target:${target}
+     currentTarget:${currentTarget} `)
+}
+
+
+ Array.from(document.getElementsByTagName('div')).forEach(
+    div=>{
+        div.addEventListener('click',Listener)
+    })
+[window,window.document,window.document.body].forEach(e=>
+{
+    e.addEventListener('click',Listener)
+})
+
+</script>
+</body>
+</html>
