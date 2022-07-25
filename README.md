@@ -43,4 +43,8 @@ addEventListener,target,currenttarget()
 ###  강의관련 연습문제  0721
 event, input, e.preventDefault();
 ###  강의관련 연습문제  0722
-set ,find 복습 map
+set ,find 복습 map,remove 
+
+###  강의관련 연습문제  0725
+clearintervel ,  재귀함수 관련 문제 
+div접목 문제 
