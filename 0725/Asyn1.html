@@ -1,0 +1,37 @@
+<html>
+
+<body>
+    <input type='number' id="input" />
+    <button id='button'>시작!</button>
+    <button id='end'>끝!</button>
+</body>
+<script>
+    //문제 <1> input 값을 클릭할때마다 콘솔로그로 값을 확인하기 문제
+    //문제 <2> input 값을 클릭하면 콘솔로그로 값을 1초마다 확인하기 문제
+    //문제 <3> 2번 +  끝 버튼 누르면 setInterval 멈추게 하기
+    const btn = document.querySelector('#button');
+    const input = document.querySelector('#input');
+    const end = document.querySelector('#end');
+    const test=()=>{console.log(input.value)}
+    let array = [];
+ 
+    // 문제 <1>  btn.addEventListener('click',()=>setTimeout(test,3000))
+    // 문제 <2> btn.addEventListener('click',()=>setInterval(test,1000))
+    // 문제 <3> btn.addEventListener('click',()=>interval=setInterval(test,1000))
+    // 문제 <3> end.addEventListener('click', () =>   {
+    // 문제 <3> clearInterval(interval);    })
+
+
+    btn.addEventListener('click',()=>{
+        const newTiemrid=window.setInterval(test,1000);
+        end.addEventListener('click',()=>{
+            clearTimeout(newTiemrid);
+        })     
+    })
+
+
+
+
+</script>
+
+</html>

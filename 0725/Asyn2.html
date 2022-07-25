@@ -1,0 +1,35 @@
+<html>
+
+<body>
+    <input type='number' id="input" />
+    <button id='button'>시작!</button>
+    <div></div>
+</body>
+<script>
+    //문제 <4> 2번 +  
+    const btn = document.querySelector('#button');
+    const input = document.querySelector('#input');
+    const end = document.querySelector('#end');
+    const div= document.querySelector('div');
+    let num=10
+    const test=()=>{
+        console.log(input.value);     
+    }
+    function numChange(){    
+        num--;
+        div.innerText=num
+    }
+
+    btn.addEventListener('click',()=>{    
+        div.innerText=num
+        const timerId=window.setInterval(numChange,1000)
+        window.setTimeout(()=>{
+            console.log(input.value);    
+            window.clearInterval(timerId);                        
+        },10000)
+        
+    }) 
+      
+</script>
+
+</html>
